@@ -25,12 +25,19 @@ body{
     top: 0;
     right: 0;
 }
-img3{
+.img3{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
-
+.img4{
+    top:45%;
+    right:15%;
+}
+.img5{
+    top: -90px;
+    left:40px;
+}
 @font-face {
     font-family: "Inconsolata";
     src: url(/assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf); 
@@ -42,6 +49,7 @@ img3{
 
 .header{
     text-align: center;
+    padding-top: 30px;
 }
 
 .header2{
@@ -49,6 +57,7 @@ img3{
     font-family: "Inconsolata";
     color: white;
     font-size: 20px;
+    padding-top:30px;
 }
 
 .message{
@@ -62,4 +71,10 @@ img3{
     display:block;
     font-size: 1.5rem;
     margin-top: 10px;;
+}
+
+form{
+    position: absolute;
+    top: 35%;
+    right: 40%;
 }

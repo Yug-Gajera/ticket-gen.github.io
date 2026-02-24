@@ -9,7 +9,6 @@ body{
     background-image: url(/assets/images/background-desktop.png);
     background-size: cover;
     background-position: center;
-    pointer-events: none;
     overflow: hidden;
 }
 
@@ -56,14 +55,14 @@ body{
     text-align: center;
     font-family: "Inconsolata";
     color: white;
-    font-size: 20px;
-    padding-top:30px;
+    font-size: 15px;
+    padding-top:20px;
 }
 
 .message{
     text-align: center;
     font-family: "Inconsolata light";
-    color: hsl(252, 6%, 83%);
+    color: hsl(252, 6%, 83%);   
     font-size: 14px;
 }
 
@@ -75,6 +74,55 @@ body{
 
 form{
     position: absolute;
-    top: 35%;
+    
     right: 40%;
+}
+
+form label{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    color: white;
+    font-family: "Inconsolata";
+}
+form input{
+    width: 110%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid hsl(245, 19%, 35%);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+form button {
+    width: 119%;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: hsl(7, 88%, 67%);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.upload-box{
+    width:119%;
+    margin-top: 10px;
+}
+.upload-label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    border-radius: 15px;
+    border: 2px dashed hsl(245,19%,35%);
+    background: rgba(255, 255, 255, 0.05);
+    color: hsl(252, 6%, 83%);
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+.upload-box input[type="file"] {
+    display: none;
 }

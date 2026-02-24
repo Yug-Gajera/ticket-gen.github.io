@@ -30,25 +30,39 @@
     </div>
     
       <form action="/style.css">
-        <label for="Avatar">
+         
+        <div class = "upload-box">
+        <label for="avatar" class = "upload-label">
           Upload Avatar
-        </label><br>
-        <input type="file" name = "Avatar"><br>
-        <label for="username">
+          <img src="/assets/images/icon-upload.svg" alt="">
+          <p>Drag and drop or click to upload</p>
+        </label>
+        <input type="file" id = "avatar" name = "Avatar"><br>
+        </div>
+         <label for="username">
           Full Name
         </label><br>
+        <div class = "name">
         <input type="text"><br>
+        </div>
         <label for="email">
           Email Address
         </label><br>
+        <div class = "email">
         <input type="email" name="email" id=""><br>
+        </div>
         <label for="github">
           GitHub Username
         </label><br>
+        <div class = "github">
         <input type="text"><br>
-        <button type="submit">
+        </div>
+        <div class = "submit">
+          <button type="submit">
           Generate My Ticket
         </button>
+        </div>
+        
       </form>
   </div>
 </body>
